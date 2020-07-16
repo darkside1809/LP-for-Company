@@ -1,0 +1,403 @@
+@media screen and (max-width: 992px) {
+  /* header section */
+  .header .menu-list {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .header .menu-list .logo {
+    display: none;
+  }
+  .header .menu-list li a {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .header .text .text-btn a {
+    font-size: 0.95rem;
+  }
+  .header .text h1 {
+    font-size: 2.8rem;
+  }
+  .header .text h3 {
+    font-size: 1.15rem;
+  }
+  /* about us section */
+  .about-us .about-cr {
+    align-items: flex-start;
+  }
+  .about-us .about-cr .about-us-item span {
+    font-size: 2.8rem;
+  }
+  .about-us .about-cr .about-us-item p {
+    font-size: 14px;
+  }
+  .about-us .about-cr .about-us-item {
+    flex-basis: 38%;
+  }
+  /* team section */
+  .team .team-container h2 {
+    font-size: 2.3rem;
+  }
+  .team .team-container p {
+    font-size: 1.2rem;
+  }
+  .team .picture-container .team-text h3 {
+    font-size: 1.4rem;
+  }
+  .team .picture-container .team-text p {
+    font-size: 1.05rem;
+  }
+  .team .picture-container .team-member a {
+    font-size: 1.3rem;
+  }
+  /* services section */
+  .services .services-text h3 {
+    font-size: 2.3rem;
+    line-height: 2px;
+  }
+  .services .services-text p {
+    font-size: 1.2rem;
+  }
+  .services .services-items i {
+    font-size: 3.5rem;
+    border: 6px solid #fff;
+    padding: 35px;
+  }
+  .services .services-items .cloud-1 {
+    padding: 35px 27px;
+  }
+  .services .services-items .services-item h4 {
+    font-size: 1.4rem;
+  }
+  .services .services-items .services-item p {
+    font-size: 1.05rem;
+  }
+  .services .services-btn a {
+    font-size: 1.1rem;
+  }
+  /* contact us section */
+  .contact-us .contact-us-items .contact-us-text h3 {
+    font-size: 2.3rem;
+  }
+  .contact-us .contact-us-items .contact-us-text p {
+    font-size: 1.2rem;
+  }
+  .contact-us .contact-us-main {
+    width: 100%;
+  }
+  .contact-us .contact-us-main i {
+    font-size: 1.3rem;
+  }
+  .contact-us form {
+    margin: 0 5% 0 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* header */
+  .header .text .text-btn a {
+    font-size: 0.85rem;
+  }
+  .header .text h1 {
+    font-size: 2.4rem;
+  }
+  .header .text h3 {
+    font-size: 1.1rem;
+  }
+  /* about-us */
+  .about-us {
+    align-items: flex-start;
+  }
+  .about-us .about-cr .about-us-item span {
+    font-size: 2.5rem;
+  }
+  .about-us .about-cr {
+    align-items: flex-start;
+  }
+  .about-us .about-cr .about-us-item p {
+    font-size: 13px;
+  }
+  .about-us .about-cr .about-us-item {
+    flex-basis: 40%;
+    margin: 10px 0px 0px 10px;
+  }
+  .about-us .about-cr .about-us-item:nth-child(1) {
+    margin-top: 50px;
+  }
+  .about-us .about-cr .about-us-item:nth-child(2) {
+    margin-top: 50px;
+  }
+  /* team */
+  .team .team-container h2 {
+    font-size: 2.1rem;
+  }
+  .team .team-container p {
+    font-size: 1.1rem;
+  }
+  .team .picture-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .team .picture-container img {
+    width: 140px;
+    margin-right: 20px;
+  }
+  .team .picture-container h3 {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .team .picture-container p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .team .picture-container .team-member {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .team .team-text {
+    width: 200px;
+  }
+  /* services */
+  .services .services-text h3 {
+    font-size: 2.1rem;
+  }
+  .services .services-text p {
+    font-size: 1.1rem;
+  }
+  .services .services-items {
+    flex-direction: column;
+  }
+  .services .services-items .services-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 60%;
+  }
+  .services .services-item i {
+    height: 60px;
+    font-size: 3.2rem;
+    margin-right: 10%;
+    padding: 30px;
+  }
+  .services .services-item .cloud-1 {
+    padding: 30px 25px 30px 25px;
+  }
+  .services .services-items h4 {
+    font-size: 1.4rem;
+  }
+  .services .services-items p {
+    font-size: 1.05rem;
+  }
+  .services .services-btn {
+    margin-top: 100px;
+  }
+  .services .services-btn a {
+    font-size: 0.85rem;
+  }
+  /* contact-us */
+  .contact-us .contact-us-items .contact-us-text h3 {
+    font-size: 2.1rem;
+  }
+  .contact-us-items .contact-us-text p {
+    font-size: 1.1rem;
+  }
+  .contact-us .contact-us-main {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 20px 0px 20px 50px;
+  }
+  .contact-us .contact-us-main .contact-us-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-us .contact-us-main i {
+    font-size: 1.1rem;
+  }
+  .contact-us .contact-us-main p {
+    font-size: 0.97rem;
+    margin-left: 20px;
+  }
+  .contact-us form input[type="text"] {
+    width: 580px;
+    font-size: 0.9rem;
+  }
+  .contact-us form textarea {
+    font-size: 0.9rem;
+    width: 580px;
+    box-sizing: border-box;
+  }
+  .contact-us form input[type="submit"] {
+    width: 580px;
+    font-size: 0.9rem;
+  }
+  .contact-us .footer {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* header */
+  .header .menu-list li a {
+    font-size: 1rem;
+  }
+  .header .text {
+    padding: 0 20px 0 20px;
+  }
+  .header .text h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .header .text h3 {
+    line-height: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .header .text .text-btn a {
+    font-size: 12px;
+  }
+  /* about-us */
+  .about-us .about-cr {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-us .about-cr .about-us-item span {
+    font-size: 2.1rem;
+  }
+  .about-us .about-cr .about-us-item {
+    margin-right: 10px;
+    padding: 0;
+  }
+  .about-us .about-cr .about-us-item:nth-child(2) {
+    margin-top: 10px;
+  }
+  .about-us .about-cr .about-us-item p {
+    font-size: 0.74rem;
+  }
+  /* team */
+  .team .team-container {
+    margin-bottom: 10px;
+  }
+  .team .team-container h2 {
+    font-size: 1.95rem;
+  }
+  .team .picture-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .team-member-2 {
+    margin: 0;
+  }
+  .team .team-container p {
+    font-size: 1rem;
+  }
+  .team .picture-container .team-member .img {
+    display: flex;
+    align-items: center;
+  }
+  .team .picture-container img {
+    width: 110px;
+  }
+  .team .picture-container .team-text h3 {
+    font-size: 1.25rem;
+  }
+  .team .picture-container .team-text p {
+    font-size: 1rem;
+  }
+  .team .picture-container .team-text i {
+    font-size: 1.1rem;
+  }
+  /* services */
+  .services .services-items {
+    max-height: 700px;
+  }
+  .services .services-items .services-item {
+    width: 900px;
+  }
+  .services .services-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0;
+  }
+  .services .services-text h3 {
+    margin: 0;
+    line-height: 30px;
+  }
+  .services .services-text p {
+    line-height: 20px;
+  }
+  .services .services-text {
+    font-size: 1.95rem;
+    margin-bottom: 40px;
+  }
+  .services .services-items .services-item {
+    max-width: 80%;
+  }
+  .services .services-items .services-item p {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .services .services-items .services-item .services-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services .services-items .services-item .services-text-container h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .services .services-item i {
+    font-size: 3.2rem;
+    padding: 30px;
+  }
+  .services .services-text p {
+    font-size: 14px;
+  }
+  .services .services-items {
+    flex-direction: column;
+  }
+  .services .services-btn a {
+    font-size: 0.9rem;
+    padding: 15px 30px 15px 30px;
+  }
+
+  /* contact-us */
+  .contact-us .contact-us-text {
+    line-height: 35px;
+  }
+  .contact-us .contact-us-text h3 {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  .contact-us-items .contact-us-text p {
+    font-size: 14.5px;
+    margin-top: 0;
+  }
+  .contact-us .contact-us-main {
+    flex-direction: column;
+    margin: 0;
+    width: 200px;
+    margin: 40px 30px 30px 0;
+  }
+  .contact-us .contact-us-main .contact-us-item p {
+    text-align: left;
+  }
+  .contact-us form input[type="text"] {
+    max-width: 90%;
+  }
+  .contact-us form textarea {
+    width: 90%;
+  }
+  .contact-us form input[type="submit"] {
+    font-size: 14px;
+    width: 90%;
+  }
+  .contact-us .footer {
+    font-size: .9rem;
+    text-align: center;
+  }
+}
