@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto:wght@300&display=swap,300&family=Montserrat:wght@500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .5s ease;
+}
+/* Header Section */
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 950px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.header .menu-list {
+  display: flex;
+  /* position: fixed;
+  left: 15%; */
+  justify-content: center;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.header .menu-list li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 50px;
+}
+.header .menu-list li a {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #989696;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+.header .menu-list li a:hover {
+  font-weight: bolder;
+  color: #000000;
+}
+.header .menu-list li .logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.header .logo::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  width: 80%;
+  border: 3px solid #121212;
+  transition: 0.65s ease;
+}
+.header .logo:hover::after {
+  opacity: 0;
+  transform: scale(1.66);
+}
+.header .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+}
+.header .text h1 {
+  margin: 0 auto;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+.header .text h3 {
+  color: #898888;
+  font-size: 1.25rem;
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+}
+.header .text .text-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.header .text .text-btn a {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(102, 99, 99);
+  padding: 20px 35px;
+  transition: 0.4s ease-out;
+}
+.header .text .text-btn a:hover {
+  color: #363636;
+  background: #fff;
+  box-shadow: 0 0 5px #a5a8a8, 0 0 20px #cccecf, 0 0 50px #fafdff;
+  border-radius: 17px;
+}
+.header .ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.header .ellipse .ellipse-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  width: 80px;
+}
+.header .ellipse .ellipse-items a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: 300ms ease-in-out;
+}
+.header .ellipse .ellipse-items a:hover {
+  transform: scale(1.3);
+  background: #635a5a;
+}
+.header .ellipse .ellipse-items .ellipse-1 {
+  background: #f0f0f0;
+}
+.header .ellipse .ellipse-items .ellipse-2 {
+  background: #e0e0e0;
+}
+.header .ellipse .ellipse-items .ellipse-3 {
+  background: #d0d0d0;
+}
+/* About Us Section */
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  min-height: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-family: "Montserrat", serif;
+  color: #b7b7b7;
+  overflow: hidden;
+}
+.about-us .about-cr {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 1.25px;
+  height: 700px;
+  width: 100%;
+  z-index: 1;
+}
+.about-us .about-cr:after {
+  content: "Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi.";
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-size: 2rem;
+  letter-spacing: 15px;
+  z-index: -1;
+  opacity: 0.1;
+}
+.about-us .about-us-item {
+  box-shadow: 0 0 10px rgb(104, 103, 103), 0 0 50px rgb(94, 93, 93);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 1 43%;
+  background-color: #000;
+}
+.about-us .about-us-item span {
+  font-size: 3rem;
+  color: #fff;
+}
+.about-us .bg-town {
+  position: absolute;
+  bottom: -5px;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 0 auto;
+}
+.team .team-container {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 10px;
+}
+.team .team-container h2 {
+  font-size: 2.5rem;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+}
+.team .team-container p {
+  font-size: 1.25rem;
+  font-family: "Merriweather", sans-serif;
+  color: #898888;
+  font-style: italic;
+}
+.team .picture-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 700px;
+  width: 100%;
+}
+.team .picture-container .team-member {
+  text-align: center;
+  line-height: 5px;
+}
+.team .picture-container .team-text h3 {
+  font-size: 1.65rem;
+  color: #464646;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.team .picture-container .team-text p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  font-family: "Roboto", sans-serif;
+}
+.team .picture-container img {
+  filter: grayscale(100%) brightness(100%);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.team .picture-container .team-member a {
+  font-size: 1.5em;
+  position: relative;
+  color: #e4e4e4;
+}
+.team a .fa-instagram,
+.fa-twitter {
+  transition: 0.2s ease-in-out;
+}
+.team a .fa-instagram:hover {
+  color: #c32a;
+  transform: scale(1.1);
+}
+.team a .fa-twitter:hover {
+  color: #1da1f2;
+  transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+  height: 1220px;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(img/Services-Background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.services .services-text {
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 10px;
+}
+.services .services-text h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.services .services-text p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 1.25rem;
+  color: #777777;
+}
+.services .services-items {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.services .services-items .services-item {
+  flex-basis: 30%;
+  text-align: center;
+}
+.services .services-items .services-item h4 {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+}
+.services .services-item p {
+  text-align: center;
+  color: #383838;
+  font-size: 1.2rem;
+  font-family: "Montserrat", serif;
+}
+.services .services-items i {
+  font-size: 5rem;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  padding: 40px 40px;
+}
+.services .services-items .cloud-1 {
+  padding: 40px 32px;
+}
+.services .services-btn {
+  align-self: center;
+  justify-self: flex-end;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 10px 20px #000;
+  margin-bottom: -100px;
+}
+.services .services-btn a {
+  padding: 20px 35px 20px 35px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(58, 58, 58);
+  transition: 0.3s ease-in-out;
+}
+.services .services-btn a:hover {
+  color: #000;
+  background: #fff;
+  box-shadow: 0 0 10px #87898a, 0 0 40px #cccecf;
+  border-radius: 3px;
+}
+/* Contuct Us Section */
+.contact-us {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+}
+.contact-us .contact-us-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us .contact-us-text {
+  line-height: 10px;
+  text-align: center;
+}
+.contact-us .contact-us-items .contact-us-text h3 {
+  font-size: 2.5rem;
+  font-family: "Roboto", serif;
+  font-weight: normal;
+}
+.contact-us .contact-us-items .contact-us-text p {
+  color: #898888;
+  font-size: 1.25rem;
+  font-family: "Merriweather", sans-serif;
+}
+.contact-us .contact-us-main {
+  margin: 0px 0px 50px 50px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-us .contact-us-main i {
+  transition: 0.3s ease;
+  font-size: 1.5rem;
+}
+.contact-us .contact-us-main i:hover {
+  transform: scale(1.3);
+}
+.contact-us .contact-us-main a[href="#"] {
+  color: #005279;
+}
+.contact_us .contact_us_main a[href="#"]:active {
+  color: purple;
+}
+.contact-us .contact-us-main p {
+  font-family: sans-serif;
+  color: #898888;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.contact-us .contact-us-item {
+  padding: 10px;
+  text-align: center;
+}
+.contact-us .contact-us-items form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 5% 0 5%;
+}
+.contact-us form input[type="text"] {
+  font-size: 1.1rem;
+  text-align: center;
+  width: 770px;
+  box-sizing: border-box;
+  height: 50px;
+  border: 1px solid #999999;
+  margin-bottom: 20px;
+}
+.contact-us form textarea { 
+  font-size: 1.1rem;
+  border: 1px solid #999999;
+  width: 100%;
+  box-sizing: border-box;
+  height: 200px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  padding: 20px;
+  resize: none;
+  overflow: auto;
+}
+.contact-us form input[type="submit"] {
+  cursor: pointer;
+  font-size: 1.15rem;
+  width: 100%;
+  height: 50px;
+  box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.65),
+    7px 7px 15px rgba(70, 70, 70, 0.12);
+  color: #666565;
+  border: none;
+  transition: 0.4s ease;
+}
+.contact-us form input[type="submit"]:hover {
+  box-shadow: 0 0 5px #a5a8a8, 0 0 40px #cccecf, 0 0 80px #fafdff;
+  color: #000;
+  border-radius: 5px;
+  background: rgb(228, 228, 228);
+}
+.contact-us form input[type="submit"]:active {
+  color: #006c9c;
+  box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.65),
+    7px 7px 15px rgba(70, 70, 70, 0.12),
+    inset -7px -7px 15px rgba(255, 255, 255, 0.65),
+    inset 7px 7px 15px rgba(70, 70, 70, 0.12);
+}
+.contact-us .footer {
+  margin-top: 170px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+}
