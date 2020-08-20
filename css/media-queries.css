@@ -3,17 +3,30 @@
   .header .menu-list {
     display: none;
   }
-  .header .menu-list {
-    display: none;
+  .header .menu__list {
+    background: #313131;
+    height: 34%;
   }
   .header .nav__bar {
     display: block;
   }
-  .header .navbar {
-    
+  .header .nav__bar .nav__row {
+    background: #979797;
+  }
+  .header .nav__bar .nav__row:before,
+  .header .nav__bar .nav__row:after {
+    background: #979797;
+  }
+  .header .menu-list li a:hover {
+    font-weight: bolder;
+    color: #ffffff;
   }
   .header .menu-list .logo {
     display: none;
+  }
+  .header .menu-list li {
+    justify-content: center;
+    margin: 0 50px 0 0;
   }
   .header .menu-list li a {
     font-size: 1.3rem;
@@ -21,6 +34,9 @@
   }
   .header .text .text-btn a {
     font-size: 0.95rem;
+  }
+  .header .text {
+    padding: 50px 0;
   }
   .header .text h1 {
     font-size: 2.8rem;
@@ -245,6 +261,9 @@
 }
 @media screen and (max-width: 576px) {
   /* header */
+  .header .menu-list li {
+    margin: 0;
+  }
   .header .menu-list li a {
     font-size: 1rem;
   }
@@ -404,7 +423,7 @@
     width: 90%;
   }
   .contact-us .footer {
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: center;
   }
 }

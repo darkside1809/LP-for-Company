@@ -24,6 +24,8 @@ body {
   max-width: 35px;
   height: 100px;
   cursor: pointer;
+  
+  z-index: 100;
 }
 .header .nav__bar {
   display: none;
@@ -51,9 +53,12 @@ body {
 .header .menu-list {
   display: flex;
   position: fixed;
+  height: 4rem;
   width: 100%;
+  padding: 0;
   margin: 0;
   justify-content: center;
+
   list-style: none;
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -91,6 +96,7 @@ body {
   width: 80%;
   border: 3px solid #121212;
   transition: 0.65s ease;
+  z-index: -10;
 }
 .header .logo:hover::after {
   opacity: 0;
@@ -385,6 +391,7 @@ body {
   margin: 0 auto;
   width: 100%;
   background: #fff;
+  overflow-x: hidden;
 }
 .contact-us .contact-us-items {
   display: flex;
