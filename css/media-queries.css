@@ -1,9 +1,16 @@
 @media screen and (max-width: 992px) {
   /* header section */
   .header .menu-list {
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    display: none;
+  }
+  .header .menu-list {
+    display: none;
+  }
+  .header .nav__bar {
+    display: block;
+  }
+  .header .navbar {
+    
   }
   .header .menu-list .logo {
     display: none;
