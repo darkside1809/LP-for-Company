@@ -257,12 +257,13 @@
   .header .menu-list li a {
     font-size: 1rem;
   }
-  .header .text {
-    padding: 0 20px 0 20px;
-  }
   .header .text h1 {
     font-size: 2.2rem;
     text-align: center;
+  }
+  .header .menu-list li a:after {
+    font-size: 4rem;
+    letter-spacing: 5px;
   }
   .header .text h3 {
     line-height: 30px;
