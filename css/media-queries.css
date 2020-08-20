@@ -10,13 +10,6 @@
   .header .nav__bar {
     display: block;
   }
-  .header .nav__bar .nav__row {
-    background: #979797;
-  }
-  .header .nav__bar .nav__row:before,
-  .header .nav__bar .nav__row:after {
-    background: #979797;
-  }
   .header .menu-list li a:hover {
     font-weight: bolder;
     color: #ffffff;
@@ -34,9 +27,6 @@
   }
   .header .text .text-btn a {
     font-size: 0.95rem;
-  }
-  .header .text {
-    padding: 50px 0;
   }
   .header .text h1 {
     font-size: 2.8rem;

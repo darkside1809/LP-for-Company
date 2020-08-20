@@ -19,30 +19,52 @@ body {
 }
 .header .navbar {
   display: flex;
-  padding: 50px;
   align-items: center;
-  max-width: 35px;
-  height: 100px;
+  position: fixed;
+  padding: 10px;
+  margin: 50px 0 0 50px;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #979797;
+  border-radius: 50%;
+  background: #424242;
+
   cursor: pointer;
-  
   z-index: 100;
+}
+.header .navbar:after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #aaaaaa;
+  border-radius: 50%;
+  transition: 0.65s ease;
+  z-index: -10;
+}
+.header .navbar:hover:after {
+  opacity: 0;
+  transform: scale(1.66);
 }
 .header .nav__bar {
   display: none;
 }
 .header .navbar .nav__row {
   position: relative;
-  width: 100%;
-  height: 1px;
-  background: #000;
+  margin-top: 14px;
+  width: 30px;
+  height: 1.7px;
+  background: #fff;
 }
 .header .navbar .nav__row::before,
 .header .navbar .nav__row::after {
-  content: '';
+  content: "";
   position: absolute;
-  background: #000;
-  height: 100%;
-  width: 100%;
+  background: #fff;
+  height: 2px;
+  width: 30px;
 }
 .header .navbar .nav__row::before {
   top: -10px;
@@ -51,6 +73,7 @@ body {
   bottom: -10px;
 }
 .header .menu-list {
+  position: relative;
   display: flex;
   position: fixed;
   height: 4rem;
@@ -69,6 +92,22 @@ body {
   align-items: center;
   text-align: center;
   margin-right: 50px;
+}
+.header .menu-list li a:after {
+  content: attr(data-after);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(240, 248, 255, 0.03);
+  font-size: 8rem;
+  letter-spacing: 20px;
+  z-index: -1;
+  transition: 0.3s ease letter-spacing;
+  
+}
+.header .menu-list li:hover a:after {
+  transform: translate(-50%, -50%) scale(1);
 }
 .header .menu-list li a {
   font-weight: 700;
@@ -106,7 +145,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 150px 0;
+  padding: 200px 0;
   margin-top: 50px;
 }
 .header .text h1 {
