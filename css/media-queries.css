@@ -1,3 +1,8 @@
+@media screen and (min-width: 992px) {
+  .header .menu-list li a:after {
+    display: none;
+  }
+}
 @media screen and (max-width: 992px) {
   /* header section */
   .header .menu-list {

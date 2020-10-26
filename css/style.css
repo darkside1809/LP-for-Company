@@ -104,7 +104,6 @@ body {
   letter-spacing: 20px;
   z-index: -1;
   transition: 0.3s ease letter-spacing;
-  
 }
 .header .menu-list li:hover a:after {
   transform: translate(-50%, -50%) scale(1);
