@@ -258,8 +258,12 @@
     font-size: 1rem;
   }
   .header .text h1 {
+    padding: 0 20px 0 20px;
     font-size: 2.2rem;
     text-align: center;
+  }
+  .header .text h3 {
+    padding: 0 20px 0 20px;
   }
   .header .menu-list li a:after {
     font-size: 4rem;
