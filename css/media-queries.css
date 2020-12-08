@@ -1,6 +1,9 @@
 @media screen and (min-width: 992px) {
   .header .nav {
   }
+  .header .nav .media {
+    display: none;
+  }
   .header .menu li a:after {
     display: none;
   }
@@ -11,6 +14,9 @@
 @media screen and (max-width: 992px) {
   /* header section */
   .header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     min-height: 8vh;
@@ -207,7 +213,7 @@
     font-size: 13px;
   }
   .about-us .about-cr .about-us-item {
-    flex-basis: 40%;
+    /* flex-basis: 40%; */
     margin: 10px 0px 0px 10px;
   }
   .about-us .about-cr .about-us-item:nth-child(1) {

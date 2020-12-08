@@ -1,14 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto:wght@300&display=swap,300&family=Montserrat:wght@500&display=swap");
 /* global styles */
-
 html {
   scroll-behavior: smooth;
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: 0.5s ease;
 }
 .section__title {
   margin-top: 50px;
@@ -16,15 +9,38 @@ body {
   line-height: 10px;
 }
 .section__title h2 {
+  padding: 1.4rem;
+  
   font-size: 2.5rem;
   font-family: "Roboto", serif;
   font-weight: 500;
 }
 .section__title p {
+  padding: 1.4rem;
+
   font-size: 1.25rem;
   font-family: "Merriweather", sans-serif;
   color: #898888;
   font-style: italic;
+}
+.subtitle {
+  font-size: 1.65rem;
+  color: #464646;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+}
+.subtitle h3 {
+  font-size: 1.65rem;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.subtitle p {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  font-family: "Montserrat", sans-serif;
 }
 .btn {
   display: block;
@@ -130,12 +146,13 @@ body {
   margin-top: 50px;
 }
 .header .title h1 {
-  margin: 0 auto;
+  padding: 1rem 2rem;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
 .header .title h3 {
+  padding: 1rem 3rem;
   color: #898888;
   font-size: 1.25rem;
   font-family: "Merriweather", serif;
@@ -177,51 +194,60 @@ body {
 /* About Us Section */
 .about-us {
   position: relative;
+  width: 100%;
+  padding: 10rem 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  min-height: 1000px;
-  width: 100%;
+  justify-content: center;
 
   background: #000;
-  font-family: sans-serif;
-  font-size: 1rem;
-  font-family: "Montserrat", serif;
-  color: #b7b7b7;
+
+  text-align: center;
   overflow: hidden;
+}
+.about-us::after {
+  content: "Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  letter-spacing: 15px;
+  z-index: 2;
+
+  color: rgba(255, 255, 255, 0.1);
 }
 .about-us .about-cr {
   position: relative;
+  padding-top: 1rem;
   display: flex;
-  height: 700px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
   letter-spacing: 1.25px;
-  z-index: 1;
-}
-.about-us .about-cr:after {
-  content: "Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi.";
-  position: absolute;
-  top: 0;
-  left: 100px;
-  font-size: 2rem;
-  letter-spacing: 15px;
-  z-index: -1;
-  opacity: 0.1;
+  z-index: 10;
 }
 .about-us .about-us-item {
-  box-shadow: 0 0 10px rgb(104, 103, 103), 0 0 50px rgb(94, 93, 93);
-  padding: 10px;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 10px;
   text-align: center;
   flex: 0 1 43%;
+
+  box-shadow: 0 0 10px rgb(104, 103, 103), 0 0 50px rgb(94, 93, 93);
   background-color: #000;
 }
+ .about-us .about-us-item p {
+  margin-top: .5rem;
+  color: #b7b7b7;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-family: "Montserrat", serif;
+ }
 .about-us .about-us-item span {
+  font-family: sans-serif;
   font-size: 3rem;
   color: #fff;
 }
@@ -234,42 +260,29 @@ body {
 
 /* Team Section */
 .team {
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   background: #fff;
-  margin: 0 auto;
 }
 .team .picture-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  height: 700px;
+
+  margin-top: 4rem;
+  padding: 2rem 0;
   width: 100%;
 }
 .team .picture-container .team-member {
   text-align: center;
-  line-height: 5px;
-}
-.team .picture-container .team-text h3 {
-  font-size: 1.65rem;
-  color: #464646;
-  font-family: sans-serif;
-  font-weight: 500;
-}
-.team .picture-container .team-text p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #b3b3b3;
-  font-family: "Roboto", sans-serif;
 }
 .team .picture-container img {
-  filter: grayscale(100%) brightness(100%);
+  -webkit-filter: grayscale(100%) brightness(100%);
+          filter: grayscale(100%) brightness(100%);
   border-radius: 50%;
   margin-bottom: 30px;
 }
 .team .picture-container .team-member a {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   position: relative;
   color: #e4e4e4;
 }
@@ -279,30 +292,27 @@ body {
 }
 .team a .fa-instagram:hover {
   color: #c32a;
-  transform: scale(1.1);
 }
 .team a .fa-twitter:hover {
   color: #1da1f2;
-  transform: scale(1.1);
 }
 
 /* Services Section */
 .services {
-  height: 1220px;
-  margin: 0 auto;
-  width: 100%;
-  background-image: url(../img/Services-Background1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 14rem 2rem;
+
+  background-image: url(../img/Services-Background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 .services .services-items {
-  height: 500px;
   width: 100%;
+  padding: 7rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -312,39 +322,27 @@ body {
   flex-basis: 30%;
   text-align: center;
 }
-.services .services-items .services-item h4 {
-  font-size: 1.7rem;
-  font-family: "Roboto", sans-serif;
-}
-.services .services-item p {
-  text-align: center;
-  color: #383838;
-  font-size: 1.2rem;
-  font-family: "Montserrat", serif;
-}
 .services .services-items i {
   font-size: 5rem;
   border: 7px solid #fff;
   border-radius: 50%;
-  padding: 40px 40px;
+  padding: 2.8rem 2.8rem;
+}
+.services .services-items h4 {
+   padding: 2rem 0 1rem;
+  color: #fff;
+}
+.services .services-items p{
+  color: rgb(94, 94, 94);
 }
 .services .services-items .cloud-1 {
   padding: 40px 32px;
 }
-.services .services-btn {
-  align-self: center;
-  justify-self: flex-end;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0px 10px 20px #000;
-  margin-bottom: -100px;
-}
 /* Contuct Us Section */
 .contact-us {
-  margin: 0 auto;
   width: 100%;
   background: #fff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .contact-us .contact-us-items {
   display: flex;
@@ -365,7 +363,7 @@ body {
   font-size: 1.5rem;
 }
 .contact-us .contact-us-main i:hover {
-  transform: scale(1.3);
+  transform: translateY(-30%);
 }
 .contact-us .contact-us-main a[href="#"] {
   color: #005279;
@@ -374,6 +372,8 @@ body {
   color: purple;
 }
 .contact-us .contact-us-main p {
+  padding: 1rem;
+
   font-family: sans-serif;
   color: #898888;
   font-size: 1.1rem;
@@ -436,7 +436,8 @@ body {
     inset 7px 7px 15px rgba(70, 70, 70, 0.12);
 }
 .contact-us .footer {
-  margin-top: 170px;
+  margin-top: 7rem;
+  padding: 2rem;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1rem;
 }
