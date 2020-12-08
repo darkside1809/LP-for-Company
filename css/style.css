@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto:wght@300&display=swap,300&family=Montserrat:wght@500&display=swap");
+/* global styles */
 html {
   scroll-behavior: smooth;
 }
@@ -8,6 +9,41 @@ body {
   box-sizing: border-box;
   transition: 0.5s ease;
 }
+.section__title {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 10px;
+}
+.section__title h2 {
+  font-size: 2.5rem;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+}
+.section__title p {
+  font-size: 1.25rem;
+  font-family: "Merriweather", sans-serif;
+  color: #898888;
+  font-style: italic;
+}
+.btn {
+  display: block;
+  padding: 15px 35px;
+  margin: 0 auto;
+
+  border-radius: 17px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+  transition: 0.3s ease-out;
+}
+.btn:hover {
+  color: #363636;
+  background: #fff;
+  box-shadow: 0 0 5px #a5a8a8, 0 0 20px #cccecf;
+}
+
 /* Header Section */
 .header {
   position: relative;
@@ -21,14 +57,10 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  padding: 10px;
-  margin: 50px 0 0 50px;
+  margin: 6rem 0 0 6rem;
   height: 30px;
-  width: 30px;
-  border: 3px solid #979797;
-  border-radius: 50%;
-  background: #424242;
 
+  border-radius: 50%;
   cursor: pointer;
   z-index: 100;
 }
@@ -39,7 +71,7 @@ body {
   bottom: -2px;
   height: 100%;
   width: 100%;
-  border: 2px solid #aaaaaa;
+
   border-radius: 50%;
   transition: 0.65s ease;
   z-index: -10;
@@ -48,35 +80,33 @@ body {
   opacity: 0;
   transform: scale(1.66);
 }
-.header .nav__bar {
-  display: none;
-}
 .header .navbar .nav__row {
   position: relative;
-  margin-top: 14px;
-  width: 30px;
-  height: 1.7px;
-  background: #fff;
+
+  width: 2.8rem;
+  height: .16rem;
+  background: rgb(0, 0, 0);
 }
 .header .navbar .nav__row::before,
 .header .navbar .nav__row::after {
   content: "";
   position: absolute;
-  background: #fff;
-  height: 2px;
-  width: 30px;
+  height: 100%;
+  width: 100%;
+
+  background: rgb(0, 0, 0);
 }
 .header .navbar .nav__row::before {
-  top: -10px;
+  transform: translateY(-1rem);
 }
 .header .navbar .nav__row::after {
-  bottom: -10px;
+  transform: translateY(1rem);
 }
 .header .menu-list {
   position: relative;
   display: flex;
   position: fixed;
-  height: 4rem;
+
   width: 100%;
   padding: 0;
   margin: 0;
@@ -140,43 +170,24 @@ body {
   opacity: 0;
   transform: scale(1.66);
 }
-.header .text {
+.header .title {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 200px 0;
   margin-top: 50px;
 }
-.header .text h1 {
+.header .title h1 {
   margin: 0 auto;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
-.header .text h3 {
+.header .title h3 {
   color: #898888;
   font-size: 1.25rem;
   font-family: "Merriweather", serif;
   font-weight: normal;
-}
-.header .text .text-btn {
-  text-align: center;
-  margin-top: 50px;
-}
-.header .text .text-btn a {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  color: rgb(102, 99, 99);
-  padding: 20px 35px;
-  transition: 0.4s ease-out;
-}
-.header .text .text-btn a:hover {
-  color: #363636;
-  background: #fff;
-  box-shadow: 0 0 5px #a5a8a8, 0 0 20px #cccecf, 0 0 50px #fafdff;
-  border-radius: 17px;
 }
 .header .ellipse {
   display: flex;
@@ -276,22 +287,6 @@ body {
   background: #fff;
   margin: 0 auto;
 }
-.team .team-container {
-  margin-top: 50px;
-  text-align: center;
-  line-height: 10px;
-}
-.team .team-container h2 {
-  font-size: 2.5rem;
-  font-family: "Roboto", serif;
-  font-weight: 500;
-}
-.team .team-container p {
-  font-size: 1.25rem;
-  font-family: "Merriweather", sans-serif;
-  color: #898888;
-  font-style: italic;
-}
 .team .picture-container {
   display: flex;
   justify-content: space-around;
@@ -353,21 +348,6 @@ body {
   align-items: center;
   color: #fff;
 }
-.services .services-text {
-  margin-bottom: 50px;
-  text-align: center;
-  line-height: 10px;
-}
-.services .services-text h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 2.5rem;
-}
-.services .services-text p {
-  font-family: "Merriweather", sans-serif;
-  font-size: 1.25rem;
-  color: #777777;
-}
 .services .services-items {
   height: 500px;
   width: 100%;
@@ -407,23 +387,6 @@ body {
   box-shadow: 0px 10px 20px #000;
   margin-bottom: -100px;
 }
-.services .services-btn a {
-  padding: 20px 35px 20px 35px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: rgb(58, 58, 58);
-  transition: 0.3s ease-in-out;
-}
-.services .services-btn a:hover {
-  color: #000;
-  background: #fff;
-  box-shadow: 0 0 10px #87898a, 0 0 40px #cccecf;
-  border-radius: 3px;
-}
 /* Contuct Us Section */
 .contact-us {
   margin: 0 auto;
@@ -436,20 +399,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-.contact-us .contact-us-text {
-  line-height: 10px;
-  text-align: center;
-}
-.contact-us .contact-us-items .contact-us-text h3 {
-  font-size: 2.5rem;
-  font-family: "Roboto", serif;
-  font-weight: normal;
-}
-.contact-us .contact-us-items .contact-us-text p {
-  color: #898888;
-  font-size: 1.25rem;
-  font-family: "Merriweather", sans-serif;
 }
 .contact-us .contact-us-main {
   margin: 0px 0px 50px 50px;

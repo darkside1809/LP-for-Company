@@ -2,6 +2,9 @@
   .header .menu-list li a:after {
     display: none;
   }
+  .header .navbar {
+    display: none;
+}
 }
 @media screen and (max-width: 992px) {
   /* header section */
