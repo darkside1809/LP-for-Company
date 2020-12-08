@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Roboto:wght@300&display=swap,300&family=Montserrat:wght@500&display=swap");
 /* global styles */
+
 html {
   scroll-behavior: smooth;
 }
@@ -51,62 +52,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  background: #fff;
+  height: 100vh;
+
+  background-color: #fff;
 }
-.header .navbar {
-  display: flex;
-  align-items: center;
+.header .menu{
   position: fixed;
-  margin: 6rem 0 0 6rem;
-  height: 30px;
-
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 100;
-}
-.header .navbar:after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  bottom: -2px;
-  height: 100%;
-  width: 100%;
-
-  border-radius: 50%;
-  transition: 0.65s ease;
-  z-index: -10;
-}
-.header .navbar:hover:after {
-  opacity: 0;
-  transform: scale(1.66);
-}
-.header .navbar .nav__row {
-  position: relative;
-
-  width: 2.8rem;
-  height: .16rem;
-  background: rgb(0, 0, 0);
-}
-.header .navbar .nav__row::before,
-.header .navbar .nav__row::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-
-  background: rgb(0, 0, 0);
-}
-.header .navbar .nav__row::before {
-  transform: translateY(-1rem);
-}
-.header .navbar .nav__row::after {
-  transform: translateY(1rem);
-}
-.header .menu-list {
-  position: relative;
   display: flex;
-  position: fixed;
-
   width: 100%;
   padding: 0;
   margin: 0;
@@ -115,15 +67,15 @@ body {
   list-style: none;
   font-family: "Roboto", sans-serif;
   background: #fff;
-  z-index: 10;
+  z-index: 99;
 }
-.header .menu-list li {
+.header .menu li{
   display: flex;
   align-items: center;
   text-align: center;
   margin-right: 50px;
 }
-.header .menu-list li a:after {
+.header .menu li a:after {
   content: attr(data-after);
   position: absolute;
   top: 50%;
@@ -135,21 +87,21 @@ body {
   z-index: -1;
   transition: 0.3s ease letter-spacing;
 }
-.header .menu-list li:hover a:after {
+.header .menu li:hover a:after {
   transform: translate(-50%, -50%) scale(1);
 }
-.header .menu-list li a {
+.header .menu li a {
   font-weight: 700;
   font-size: 1.1rem;
   color: #989696;
   text-decoration: none;
   transition: 0.25s ease-in-out;
 }
-.header .menu-list li a:hover {
+.header .menu li a:hover {
   font-weight: bolder;
   color: #000000;
 }
-.header .menu-list li .logo {
+.header .menu li .logo {
   position: relative;
   width: 50px;
   height: 50px;
@@ -174,7 +126,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 200px 0;
+  padding: 5rem;
   margin-top: 50px;
 }
 .header .title h1 {
