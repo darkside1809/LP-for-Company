@@ -6,7 +6,6 @@ html {
 .section__title {
   margin-top: 50px;
   text-align: center;
-  line-height: 10px;
 }
 .section__title h2 {
   padding: 1.4rem;
@@ -16,7 +15,7 @@ html {
   font-weight: 500;
 }
 .section__title p {
-  padding: 1.4rem;
+  padding: 0 1.4rem;
 
   font-size: 1.25rem;
   font-family: "Merriweather", sans-serif;
@@ -38,9 +37,9 @@ html {
 .subtitle p {
   padding: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #b3b3b3;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .btn {
   display: block;
@@ -68,16 +67,14 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   background-color: #fff;
 }
 .header .menu{
   position: fixed;
-  display: flex;
   width: 100%;
-  padding: 0;
-  margin: 0;
+  display: flex;
   justify-content: center;
 
   list-style: none;
@@ -96,54 +93,33 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%) scale(0);
   color: rgba(240, 248, 255, 0.03);
   font-size: 8rem;
   letter-spacing: 20px;
   z-index: -1;
-  transition: 0.3s ease letter-spacing;
+  transition: 0.3s ease;
 }
 .header .menu li:hover a:after {
   transform: translate(-50%, -50%) scale(1);
 }
 .header .menu li a {
-  font-weight: 700;
+  font-family: sans-serif;
   font-size: 1.1rem;
   color: #989696;
   text-decoration: none;
   transition: 0.25s ease-in-out;
 }
 .header .menu li a:hover {
-  font-weight: bolder;
   color: #000000;
-}
-.header .menu li .logo {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.header .logo::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 80%;
-  width: 80%;
-  border: 3px solid #121212;
-  transition: 0.65s ease;
-  z-index: -10;
-}
-.header .logo:hover::after {
-  opacity: 0;
-  transform: scale(1.66);
 }
 .header .title {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 5rem;
-  margin-top: 50px;
+  margin-top: 7rem;
 }
 .header .title h1 {
   padding: 1rem 2rem;
@@ -152,7 +128,6 @@ html {
   font-size: 3rem;
 }
 .header .title h3 {
-  padding: 1rem 3rem;
   color: #898888;
   font-size: 1.25rem;
   font-family: "Merriweather", serif;
@@ -261,6 +236,7 @@ html {
 /* Team Section */
 .team {
   min-height: 100vh;
+  padding: 2rem;
   background: #fff;
 }
 .team .picture-container {
@@ -273,9 +249,18 @@ html {
   width: 100%;
 }
 .team .picture-container .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
   text-align: center;
 }
+.team .picture-container .img {
+  width: 12rem;
+}
 .team .picture-container img {
+  object-fit: cover;
+  width: 100%;
   -webkit-filter: grayscale(100%) brightness(100%);
           filter: grayscale(100%) brightness(100%);
   border-radius: 50%;
@@ -329,7 +314,7 @@ html {
   padding: 2.8rem 2.8rem;
 }
 .services .services-items h4 {
-   padding: 2rem 0 1rem;
+  padding: 2rem 0 1rem;
   color: #fff;
 }
 .services .services-items p{
@@ -340,7 +325,8 @@ html {
 }
 /* Contuct Us Section */
 .contact-us {
-  width: 100%;
+  padding: 2rem;  
+
   background: #fff;
   overflow: hidden;
 }
@@ -351,7 +337,7 @@ html {
   align-items: center;
 }
 .contact-us .contact-us-main {
-  margin: 0px 0px 50px 50px;
+  margin: 0 0 50px 50px;
   height: 200px;
   width: 100%;
   display: flex;
@@ -390,28 +376,31 @@ html {
   max-width: 100%;
   margin: 0 5% 0 5%;
 }
-.contact-us form input[type="text"] {
-  font-size: 1.1rem;
+.contact-us .form {
+  width: 1000px;
+}
+.contact-us .form input[type="text"] {
+  width: 100%;
   text-align: center;
-  width: 770px;
-  box-sizing: border-box;
   height: 50px;
   border: 1px solid #999999;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
-.contact-us form textarea {
-  font-size: 1.1rem;
-  border: 1px solid #999999;
+.contact-us .form textarea {
   width: 100%;
-  box-sizing: border-box;
   height: 200px;
-  font-family: sans-serif;
   margin-bottom: 30px;
   padding: 20px;
+
+  border: 1px solid #999999;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+
   resize: none;
   overflow: auto;
 }
-.contact-us form input[type="submit"] {
+.contact-us .form input[type="submit"] {
   cursor: pointer;
   font-size: 1.15rem;
   width: 100%;
@@ -422,13 +411,13 @@ html {
   border: none;
   transition: 0.4s ease;
 }
-.contact-us form input[type="submit"]:hover {
+.contact-us .form input[type="submit"]:hover {
   box-shadow: 0 0 5px #a5a8a8, 0 0 40px #cccecf, 0 0 80px #fafdff;
   color: #000;
   border-radius: 5px;
   background: rgb(228, 228, 228);
 }
-.contact-us form input[type="submit"]:active {
+.contact-us .form input[type="submit"]:active {
   color: #006c9c;
   box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.65),
     7px 7px 15px rgba(70, 70, 70, 0.12),

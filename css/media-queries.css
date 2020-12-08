@@ -1,6 +1,4 @@
 @media screen and (min-width: 992px) {
-  .header .nav {
-  }
   .header .nav .media {
     display: none;
   }
@@ -12,18 +10,34 @@
   }
 }
 @media screen and (max-width: 992px) {
+  /* global properties */
+
   /* header section */
+  .header {
+    min-height: 75vh;
+  }
+  .header .title h1 {
+    font-size: 2.5rem;
+  }
+  .header .title h3 {
+    font-size: 1.2rem;
+  }
   .header .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    min-height: 8vh;
+    min-height: 7vh;
     background-color: rgb(24, 24, 24);
     z-index: 1000;
   }
+  .header .media {
+    position: absolute;
+    right: 0;
+  }
   .header .navbar {
+    margin-left: 1.5rem;
     display: flex;
     align-items: center;
     position: fixed;
@@ -35,7 +49,6 @@
   }
   .header .menu {
     position: fixed;
-    background-color: rgb(31, 30, 30);
     width: 100vw;
     height: 100vh;
     right: 100%;
@@ -44,24 +57,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: rgb(31, 30, 30);
     z-index: 10;
     overflow-x: hidden;
     transition: 0.4s ease right;
   }
   .header .menu.active {
     right: 0;
-  }
-  .header .navbar:after {
-    content: "";
-    position: absolute;
-    right: -2px;
-    bottom: -2px;
-    height: 100%;
-    width: 100%;
-
-    border-radius: 50%;
-    transition: 0.65s ease;
-    z-index: -10;
   }
   .header .navbar:hover:after {
     opacity: 0;
@@ -70,9 +73,10 @@
   .header .navbar .nav__row {
     position: relative;
 
-    width: 2.8rem;
+    width: 2.5rem;
     height: 0.16rem;
-    background: rgb(0, 0, 0);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
     transition: all 0.15s linear;
   }
   .header .navbar .nav__row::before,
@@ -81,41 +85,39 @@
     position: absolute;
     height: 100%;
     width: 100%;
-
-    background: rgb(0, 0, 0);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
   }
   .header .navbar .nav__row::before {
-    transform: translateY(-1rem);
+    transform: translateY(-0.8rem);
     transition: all 0.15s linear;
   }
   .header .navbar .nav__row::after {
-    transform: translateY(1rem);
+    transform: translateY(0.8rem);
   }
   .header .navbar.active .nav__row {
     background-color: #fff;
-    transform: rotate(40deg);
+    transform: rotate(45deg);
   }
   .header .navbar.active .nav__row:before {
     background-color: #fff;
-    transform: rotate(-80deg);
+    transform: rotate(-90deg);
   }
   .header .navbar.active .nav__row:after {
     opacity: 0;
   }
   .header .menu li a:hover {
-    font-weight: bolder;
     color: #ffffff;
   }
   .header .menu .logo {
     display: none;
   }
   .header .menu li {
-    justify-content: center;
-    margin: 0 50px 0 0;
+    margin-bottom: 1rem;
   }
   .header .menu li a {
-    font-size: 1.3rem;
-    padding: 10px;
+    font-size: 1.7rem;
+    padding: 0.5rem;
   }
   /* about us section */
   .about-us .about-cr {
@@ -131,29 +133,10 @@
     flex-basis: 38%;
   }
   /* team section */
-  .team .team-container h2 {
-    font-size: 2.3rem;
-  }
-  .team .team-container p {
-    font-size: 1.2rem;
-  }
-  .team .picture-container .team-text h3 {
-    font-size: 1.4rem;
-  }
-  .team .picture-container .team-text p {
-    font-size: 1.05rem;
-  }
   .team .picture-container .team-member a {
     font-size: 1.3rem;
   }
   /* services section */
-  .services .services-text h3 {
-    font-size: 2.3rem;
-    line-height: 2px;
-  }
-  .services .services-text p {
-    font-size: 1.2rem;
-  }
   .services .services-items i {
     font-size: 3.5rem;
     border: 6px solid #fff;
@@ -162,22 +145,10 @@
   .services .services-items .cloud-1 {
     padding: 35px 27px;
   }
-  .services .services-items .services-item h4 {
-    font-size: 1.4rem;
-  }
-  .services .services-items .services-item p {
-    font-size: 1.05rem;
-  }
   .services .services-btn a {
     font-size: 1.1rem;
   }
   /* contact us section */
-  .contact-us .contact-us-items .contact-us-text h3 {
-    font-size: 2.3rem;
-  }
-  .contact-us .contact-us-items .contact-us-text p {
-    font-size: 1.2rem;
-  }
   .contact-us .contact-us-main {
     width: 100%;
   }
