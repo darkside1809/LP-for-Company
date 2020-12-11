@@ -24,9 +24,6 @@ html {
 }
 .subtitle {
   font-size: 1.65rem;
-  color: #464646;
-  font-family: 'Roboto',sans-serif;
-  font-weight: 500;
 }
 .subtitle h3 {
   font-size: 1.65rem;
@@ -169,8 +166,7 @@ html {
 /* About Us Section */
 .about-us {
   position: relative;
-  width: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0 12rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -184,21 +180,20 @@ html {
 .about-us::after {
   content: "Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi. Sed at auctor sem, nec tincidunt elit. Pellentesque enim turpis, porttitor ac orci in, ultrices efficitus nis. Ut odiolibero, sodales elefend, suscipit dapibus mi.";
   position: absolute;
-  top: 0;
+  top: 2rem;
   left: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 15px;
   z-index: 2;
 
   color: rgba(255, 255, 255, 0.1);
 }
 .about-us .about-cr {
-  position: relative;
-  padding-top: 1rem;
   display: flex;
   width: 100%;
+  padding: 0 1rem;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   letter-spacing: 1.25px;
@@ -235,7 +230,6 @@ html {
 
 /* Team Section */
 .team {
-  min-height: 100vh;
   padding: 2rem;
   background: #fff;
 }
@@ -259,6 +253,7 @@ html {
   width: 12rem;
 }
 .team .picture-container img {
+  display: block;
   object-fit: cover;
   width: 100%;
   -webkit-filter: grayscale(100%) brightness(100%);
@@ -288,16 +283,17 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14rem 2rem;
+  height: auto;
+  padding: 3rem 2rem 7rem;
 
   background-image: url(../img/Services-Background1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
 }
 .services .services-items {
   width: 100%;
-  padding: 7rem 0;
+  padding: 5rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -313,7 +309,7 @@ html {
   border-radius: 50%;
   padding: 2.8rem 2.8rem;
 }
-.services .services-items h4 {
+.services .services-items h3 {
   padding: 2rem 0 1rem;
   color: #fff;
 }

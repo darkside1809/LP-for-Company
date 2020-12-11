@@ -11,7 +11,18 @@
 }
 @media screen and (max-width: 992px) {
   /* global properties */
-
+  .section__title h2 {
+    font-size: 2.1rem;
+  }
+  .section__title p {
+    font-size: 1.1rem;
+  }
+  .subtitle h3 {
+    font-size: 1.35rem;
+  }
+  .subtitle p {
+    font-size: 1rem;
+  }
   /* header section */
   .header {
     min-height: 75vh;
@@ -66,17 +77,13 @@
   .header .menu.active {
     right: 0;
   }
-  .header .navbar:hover:after {
-    opacity: 0;
-    transform: scale(1.66);
-  }
   .header .navbar .nav__row {
     position: relative;
 
     width: 2.5rem;
-    height: 0.16rem;
+    height: 0.25rem;
     border-radius: 2px;
-    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     transition: all 0.15s linear;
   }
   .header .navbar .nav__row::before,
@@ -112,12 +119,16 @@
   .header .menu .logo {
     display: none;
   }
-  .header .menu li {
-    margin-bottom: 1rem;
+  .header .menu li:not(:nth-child(4)) {
+    margin: 0 0 2rem 0;
+    padding: 0.5rem;
+  }
+  .header .menu li a:after {
+    font-size: 6rem;
   }
   .header .menu li a {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.7rem;
-    padding: 0.5rem;
   }
   /* about us section */
   .about-us .about-cr {
@@ -133,6 +144,9 @@
     flex-basis: 38%;
   }
   /* team section */
+  .team .picture-container .img {
+    width: 10rem;
+  }
   .team .picture-container .team-member a {
     font-size: 1.3rem;
   }
@@ -161,113 +175,76 @@
 }
 @media screen and (max-width: 768px) {
   /* header */
-  .header .text .text-btn a {
-    font-size: 0.85rem;
-  }
-  .header .text h1 {
-    font-size: 2.4rem;
-  }
-  .header .text h3 {
-    font-size: 1.1rem;
+  .header .title h3 {
+    line-height: 1.5;
   }
   /* about-us */
-  .about-us {
-    align-items: flex-start;
-  }
   .about-us .about-cr .about-us-item span {
-    font-size: 2.5rem;
-  }
-  .about-us .about-cr {
-    align-items: flex-start;
+    font-size: 2rem;
   }
   .about-us .about-cr .about-us-item p {
-    font-size: 13px;
-  }
-  .about-us .about-cr .about-us-item {
-    /* flex-basis: 40%; */
-    margin: 10px 0px 0px 10px;
-  }
-  .about-us .about-cr .about-us-item:nth-child(1) {
-    margin-top: 50px;
-  }
-  .about-us .about-cr .about-us-item:nth-child(2) {
-    margin-top: 50px;
+    font-size: .9rem;
   }
   /* team */
-  .team .team-container h2 {
-    font-size: 2.1rem;
-  }
-  .team .team-container p {
-    font-size: 1.1rem;
-  }
   .team .picture-container {
-    align-items: center;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    align-items: flex-start;
     flex-direction: column;
   }
-  .team .picture-container img {
-    width: 140px;
-    margin-right: 20px;
+  .team .picture-container .img {
+    margin-right: 2rem;
   }
-  .team .picture-container h3 {
-    line-height: 20px;
-    font-size: 18px;
-  }
-  .team .picture-container p {
-    line-height: 20px;
-    font-size: 12px;
+  .team .picture-container .img img {
+    margin-bottom: 0;
+    width: 9rem;
   }
   .team .picture-container .team-member {
-    display: flex;
+    text-align: left;
     flex-direction: row;
-    width: 50%;
+    align-items: center;
   }
-  .team .team-text {
-    width: 200px;
+  .team .picture-container .team-member p {
+    line-height: 1.3;
+    text-align: left;
+    padding: .7rem 0;
   }
   /* services */
-  .services .services-text h3 {
-    font-size: 2.1rem;
+  .services {
+    padding-top: 5rem;
   }
-  .services .services-text p {
-    font-size: 1.1rem;
+  .services .section__title p {
+    line-height: 1.4;
   }
   .services .services-items {
+    padding-top: 3.5rem;
     flex-direction: column;
   }
   .services .services-items .services-item {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 60%;
+    flex-basis: 30%;
+    padding: 1rem;
+    text-align: left;
+  }
+  .services .services-items .services-item h3 {
+    padding-top: 1rem;
+  }
+  .services .services-items .services-item p {
+    text-align: left;
+    padding: 0;
   }
   .services .services-item i {
-    height: 60px;
     font-size: 3.2rem;
-    margin-right: 10%;
-    padding: 30px;
+    margin-right: 2rem;
+    padding: 2rem;
   }
   .services .services-item .cloud-1 {
     padding: 30px 25px 30px 25px;
   }
-  .services .services-items h4 {
-    font-size: 1.4rem;
-  }
-  .services .services-items p {
-    font-size: 1.05rem;
-  }
-  .services .services-btn {
-    margin-top: 100px;
-  }
-  .services .services-btn a {
-    font-size: 0.85rem;
+  .services .btn {
+    margin-top: -2rem;
   }
   /* contact-us */
-  .contact-us .contact-us-items .contact-us-text h3 {
-    font-size: 2.1rem;
-  }
-  .contact-us-items .contact-us-text p {
-    font-size: 1.1rem;
-  }
   .contact-us .contact-us-main {
     flex-direction: column;
     align-items: flex-start;
@@ -286,18 +263,18 @@
     font-size: 0.97rem;
     margin-left: 20px;
   }
-  .contact-us form input[type="text"] {
-    width: 580px;
+  .contact-us .form input[type="text"] {
+    width: 100%;
     font-size: 0.9rem;
   }
-  .contact-us form textarea {
+  .contact-us .form textarea {
     font-size: 0.9rem;
-    width: 580px;
+    width: 100%;
     box-sizing: border-box;
   }
-  .contact-us form input[type="submit"] {
-    width: 580px;
-    font-size: 0.9rem;
+  .contact-us .form input[type="submit"] {
+    width: 100%;  
+    font-size: .9rem;
   }
   .contact-us .footer {
     font-size: 0.95rem;
