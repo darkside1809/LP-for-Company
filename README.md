@@ -1,1 +1,1 @@
-# project-1
+Landing page for company provides service
